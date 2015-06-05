@@ -1,5 +1,4 @@
-﻿using System;
-using Models;
+﻿using Models;
 using NUnit.Framework;
 using Plant.Core;
 using PlantDemo.Support.Blueprints;
@@ -7,10 +6,8 @@ using PlantDemo.Support.Blueprints;
 namespace PlantDemo
 {
     [TestFixture]
-    public class UnitTest1
+    public class ConstructorTests
     {
-        private VehicleModel vehicle;
-
         [SetUp]
         public void BeforeEach()
         {
@@ -18,16 +15,18 @@ namespace PlantDemo
             vehicle = plant.Create<VehicleModel>();
         }
 
-        [Test]
-        public void VehicleModel_Constructor_ReadOnlyFieldPopulation()
-        {
-            Assert.IsNotNull(vehicle.GrossVehicleWeight);
-        }
+        private VehicleModel vehicle;
 
         [Test]
         public void VehicleModel_Constructor_HasTire()
         {
             Assert.IsNotNull(vehicle.Tire);
+        }
+
+        [Test]
+        public void VehicleModel_Constructor_ReadOnlyFieldPopulation()
+        {
+            Assert.IsNotNull(vehicle.GrossVehicleWeight);
         }
     }
 }

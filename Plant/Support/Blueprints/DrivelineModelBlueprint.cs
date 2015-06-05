@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Models;
+﻿using Models;
 using Plant.Core;
 
 namespace PlantDemo.Support.Blueprints
 {
-    class DrivelineModelBlueprint : IBlueprint
+    internal class DrivelineModelBlueprint : IBlueprint
     {
         public void SetupPlant(BasePlant plant)
         {
