@@ -4,21 +4,6 @@ I, being used to [FactoryGirl](https://github.com/thoughtbot/factory_girl) from 
 
 Here is a comparison between some mocking frameworks.
 
-# Mocking
-
-## [Moq](https://github.com/Moq/moq4)
-
-- Can only mock Virtual or Abstract Members!!!
-- Actual Mocking (of properties, methods, etc)
-- Not for object construction / does not work on read-only attributes
-
-
-## [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)
-
-- Same restrictions as Moq
-- Implements some additional testing features
-  - Can test if a method is called, because objects generated are fake objects.
-
 
 # Object Creation
 
@@ -34,3 +19,20 @@ Here is a comparison between some mocking frameworks.
 - Does not support overriding read-only attributes
 - Factory definitions don't work with read-only attributes
   - Can be gotten around by creating the object normally, but setting different values for attributes for a particular test still wouldn't work.
+
+
+# Mocking
+
+## [Moq](https://github.com/Moq/moq4)
+
+- Can only mock Virtual or Abstract Members!!!
+- Actual Mocking (of properties, methods, etc)
+- Not for object construction / does not work on read-only attributes
+
+
+## [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)
+
+- Same restrictions as Moq
+- Implements some additional testing features
+  - Can test if a method is called, because objects generated are fake objects.
+

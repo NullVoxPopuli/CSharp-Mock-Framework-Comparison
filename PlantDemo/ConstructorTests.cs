@@ -16,7 +16,12 @@ namespace PlantDemo
             var plant = new BasePlant().
                 WithBlueprintsFromAssemblyOf<VehicleModelBlueprint>();
 
-            vehicle = plant.Create<VehicleModel>();
+            vehicle = plant.Create<VehicleModel>(new
+                {
+                    NumberOfWheels = 5, 
+                    NumberOfTires = 6
+                });
+
         }
 
 
@@ -31,6 +36,13 @@ namespace PlantDemo
         public void VehicleModel_Constructor_ReadOnlyFieldPopulation()
         {
             Assert.IsNotNull(vehicle.GrossVehicleWeight);
+        }
+
+        [Test]
+        public void VehicleModel_Constructor_DefaultsCanBeOverridden()
+        {
+            Assert.AreEqual(vehicle.NumberOfWheels, 5);
+            Assert.AreEqual(vehicle.NumberOfTires, 6);
         }
     }
 }
