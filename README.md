@@ -13,6 +13,13 @@ Here is a comparison between some mocking frameworks.
 - Not for object construction / does not work on read-only attributes
 
 
+## [FakeItEasy](https://github.com/FakeItEasy/FakeItEasy)
+
+- Same restrictions as Moq
+- Implements some additional testing features
+  - Can test if a method is called, because objects generated are fake objects.
+
+
 # Object Creation
 
 ## [Plant](https://github.com/jbrechtel/plant)
