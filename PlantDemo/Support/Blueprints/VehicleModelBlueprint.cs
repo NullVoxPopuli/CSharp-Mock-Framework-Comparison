@@ -4,7 +4,7 @@ using Plant.Core;
 
 namespace PlantDemo.Support.Blueprints
 {
-    internal class VehicleModelBlueprint : IBlueprint
+    public class VehicleModelBlueprint : IBlueprint
     {
         public void SetupPlant(BasePlant plant)
         {
