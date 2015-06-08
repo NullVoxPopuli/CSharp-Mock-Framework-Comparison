@@ -8,9 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A2DD3D
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryGirl", "FactoryGirl\FactoryGirl.csproj", "{B1D119B2-1273-4D93-A2EC-47167F8DE867}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantDemo", "Plant\PlantDemo.csproj", "{F52BFA1F-D872-41BB-8191-5EF7A2F772F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantDemo", "PlantDemo\PlantDemo.csproj", "{F52BFA1F-D872-41BB-8191-5EF7A2F772F4}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C191F2C3-1965-42D6-BAA2-B94362B244CB} = {C191F2C3-1965-42D6-BAA2-B94362B244CB}
 	EndProjectSection
