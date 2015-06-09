@@ -10,29 +10,16 @@ namespace PlantDemo.Support.Blueprints
         {
             plant.DefineConstructionOf<VehicleModel>(new
             {
-                FrontalArea = 20.0,
-                GrossVehicleWeight = 1234.00,
+                Area = 20.0,
+                Weight = 1234.00,
                 NumberOfTires = 4,
-                NumberOfWheels = 4,
-                WeightOnDriveWheelsType = 2,
-                WeightOnDriveWheels = 3000.0,
-                OverallDrivelineRatio = .20,
-                OverallDrivelineEfficiency = .90,
-                DrivelineComponents = new LazyProperty<List<DrivelineModel>>(() =>
-                {
-                    var p = new BasePlant().WithBlueprintsFromAssemblyOf<DrivelineModelBlueprint>();
-                    var collection = new List<DrivelineModel>
-                    {
-                        p.Create<DrivelineModel>()
-                    };
-                    return collection;
-                }),
+                TotalRatio = .20,
+                TotalEfficiency = .90,
                 Tire = new LazyProperty<TireModel>(() =>
                 {
                     plant = new BasePlant().WithBlueprintsFromAssemblyOf<TireModelBlueprint>();
                     return plant.Create<TireModel>();
                 }),
-                CrossSectionalArea = 2,
                 DragCoefficient = 2
             });
         }

@@ -10,30 +10,30 @@ namespace Models
     {
         // Coefficients of Sliding Friction
         // ax² + bx + c 
-        public readonly double SlidingFrictionCoefficient1; // c
-        public readonly double SlidingFrictionCoefficient2; // b
-        public readonly double SlidingFrictionCoefficient3; // a
+        public readonly double c; // c
+        public readonly double b; // b
+        public readonly double a; // a
 
-        public readonly double RollingRadius;
+        public readonly double Radius;
         public readonly double Inertia;
-        public readonly double RevsPerMile;
+        public readonly double RPM;
         public readonly double Friction;
 
         public TireModel(
-            double slidingFrictionCoefficient1, 
-            double slidingFrictionCoefficient2, 
-            double slidingFrictionCoefficient3,
-            double rollingRadius, 
+            double cin, 
+            double bin, 
+            double ain,
+            double radius, 
             double inertia, 
-            double revsPerMile, 
+            double rpm, 
             double friction)
         {
-            SlidingFrictionCoefficient1 = slidingFrictionCoefficient1;
-            SlidingFrictionCoefficient2 = slidingFrictionCoefficient2;
-            SlidingFrictionCoefficient3 = slidingFrictionCoefficient3;
-            RollingRadius = rollingRadius;
+            c = cin;
+            b = bin;
+            a = ain;
+            Radius = radius;
             Inertia = inertia;
-            RevsPerMile = revsPerMile;
+            RPM = rpm;
             Friction = friction;
         }
     }

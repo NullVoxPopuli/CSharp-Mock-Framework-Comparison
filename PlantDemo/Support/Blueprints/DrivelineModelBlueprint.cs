@@ -10,7 +10,7 @@ namespace PlantDemo.Support.Blueprints
             plant.DefineConstructionOf<DrivelineModel>(new
             {
                 AxelRatio = 0.5,
-                AuxGearingRatio = 0.2
+                GearRatio = 0.2
             });
         }
     }

@@ -18,8 +18,7 @@ namespace PlantDemo
 
             vehicle = plant.Create<VehicleModel>(new
                 {
-                    NumberOfWheels = 5, 
-                    NumberOfTires = 6
+                    NumberOfTires = 5
                 });
 
         }
@@ -35,14 +34,13 @@ namespace PlantDemo
         [Test]
         public void VehicleModel_Constructor_ReadOnlyFieldPopulation()
         {
-            Assert.IsNotNull(vehicle.GrossVehicleWeight);
+            Assert.IsNotNull(vehicle.Weight);
         }
 
         [Test]
         public void VehicleModel_Constructor_DefaultsCanBeOverridden()
         {
-            Assert.AreEqual(vehicle.NumberOfWheels, 5);
-            Assert.AreEqual(vehicle.NumberOfTires, 6);
+            Assert.AreEqual(vehicle.NumberOfTires, 5);
         }
     }
 }
