@@ -10,14 +10,12 @@ namespace Models
     public class DrivelineModel
     {
         public readonly double AxleRatio;
-        public readonly double AuxGearingRatio;
-        //        public readonly Sequence Sequence;
+        public readonly double GearRatio;
 
-        public DrivelineModel(double axleRatio, double auxGearingRatio)
+        public DrivelineModel(double axleRatio, double gearRatio)
         {
             AxleRatio = axleRatio;
-            AuxGearingRatio = auxGearingRatio;
-            //          Sequence = sequence;
+            GearRatio = gearRatio;
         }
     }
 }

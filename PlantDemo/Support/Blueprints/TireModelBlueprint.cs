@@ -9,12 +9,12 @@ namespace PlantDemo.Support.Blueprints
         {
             plant.DefineConstructionOf<TireModel>(new
             {
-                SlidingFrictionCoefficient1 = 1.0,
-                SlidingFricitonCoefficient2 = 2.0,
-                SlidingFrictionCoefficient3 = 3.0,
-                RollingRadius = 5.0,
+                c = 1.0,
+                b = 2.0,
+                a = 3.0,
+                Radius = 5.0,
                 Inertia = 10,
-                RevsPerMile = 1000,
+                RPM = 1000,
                 Friction = .9
             });
         }

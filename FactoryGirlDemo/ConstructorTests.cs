@@ -32,7 +32,7 @@ namespace FactoryGirlDemo
         [Test]
         public void VehicleModel_Constructor_ReadOnlyFieldPopulation()
         {
-            Assert.IsNotNull(vehicle.GrossVehicleWeight);
+            Assert.IsNotNull(vehicle.Weight);
         }
     }
 }

@@ -13,14 +13,13 @@ namespace FactoryGirlDemo.Support.Factories
         public void Define()
         {
             FactoryGirl.Define<VehicleModel>(() => new VehicleModel(
-                20.0, 1234.00, 4, 4, 2, 3000.0, .20, .90, 
-                new List<DrivelineModel>()
-                {
-                   FactoryGirl.Build<DrivelineModel>() 
-                }, 
-                FactoryGirl.Build<TireModel>(),
-                2, 2      
-            )
+                area: 0,
+                numberOfTires: 0,
+                weight: 0,
+                totalEfficiency: 0,
+                totalRatio: 0,
+                tire: FactoryGirl.Build<TireModel>(),
+                dragCoefficient: 0)
             {
                 // non read-only properties can be set here              
             });
